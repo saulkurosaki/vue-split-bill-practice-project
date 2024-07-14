@@ -9,3 +9,7 @@ export const store = reactive({
   },
   people: [],
 });
+
+export function getGrandTotal() {
+  return store.params.total * (store.params.tip / 100 + 1);
+}
