@@ -16,4 +16,12 @@ const props = defineProps(["title", "value"]);
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.title {
+  font-weight: bolder;
+}
+
+.value {
+  color: yellowgreen;
+}
+</style>
