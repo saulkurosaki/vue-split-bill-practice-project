@@ -1,5 +1,7 @@
 <script setup></script>
 
-<template>Hola soy saul</template>
+<template>
+  <div class="container"></div>
+</template>
 
 <style scoped></style>
