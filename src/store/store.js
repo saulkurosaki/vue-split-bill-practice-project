@@ -32,6 +32,7 @@ export function getGrandTotal() {
 //     });
 //   }
 
+//   calculateRemaining();
 // }
 
 function calculateRemaining() {
@@ -42,4 +43,13 @@ function calculateRemaining() {
   );
 
   store.params.remaining = remaining;
+}
+
+export function pay(id, paid) {
+  const person = store.people.find((item) => item.id === id);
+
+  if (person) {
+    person.paid = paid;
+    calculateRemaining();
+  }
 }
