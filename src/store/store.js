@@ -13,3 +13,33 @@ export const store = reactive({
 export function getGrandTotal() {
   return store.params.total * (store.params.tip / 100 + 1);
 }
+
+// export function calculate() {
+//   store.people = [];
+//   const total = store.params.total;
+//   const tip = store.params.tip;
+//   const people = store.params.people;
+//   const totalPerPerson = getGrandTotal() / people;
+
+//   store.params.remaining = getGrandTotal();
+
+//   for (let i = 0; i < people; i++) {
+//     store.people.push({
+//       id: crypto.randomUUID(),
+//       numberOfPerson: i + 1,
+//       totalPerPerson,
+//       paid: false,
+//     });
+//   }
+
+// }
+
+function calculateRemaining() {
+  const missingToPay = store.people.filter((person) => !person.paid);
+  const remaining = missingToPay.reduce(
+    (acc, item) => (acc += item.totalPerPerson),
+    0
+  );
+
+  store.params.remaining = remaining;
+}
