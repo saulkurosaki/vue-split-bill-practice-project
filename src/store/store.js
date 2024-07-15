@@ -14,26 +14,26 @@ export function getGrandTotal() {
   return store.params.total * (store.params.tip / 100 + 1);
 }
 
-// export function calculate() {
-//   store.people = [];
-//   const total = store.params.total;
-//   const tip = store.params.tip;
-//   const people = store.params.people;
-//   const totalPerPerson = getGrandTotal() / people;
+export function calculate() {
+  store.people = [];
+  const total = store.params.total;
+  const tip = store.params.tip;
+  const people = store.params.people;
+  const totalPerPerson = getGrandTotal() / people;
 
-//   store.params.remaining = getGrandTotal();
+  store.params.remaining = getGrandTotal();
 
-//   for (let i = 0; i < people; i++) {
-//     store.people.push({
-//       id: crypto.randomUUID(),
-//       numberOfPerson: i + 1,
-//       totalPerPerson,
-//       paid: false,
-//     });
-//   }
+  for (let i = 0; i < people; i++) {
+    store.people.push({
+      id: crypto.randomUUID(),
+      numberOfPerson: i + 1,
+      totalPerPerson,
+      paid: false,
+    });
+  }
 
-//   calculateRemaining();
-// }
+  calculateRemaining();
+}
 
 function calculateRemaining() {
   const missingToPay = store.people.filter((person) => !person.paid);
