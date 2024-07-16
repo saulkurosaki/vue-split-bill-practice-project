@@ -8,10 +8,10 @@ const props = defineProps(["title", "value"]);
   <div>
     <span class="title">{{ props.title }}</span>
     <span class="value">{{
-        new Intl.NumberFormat('en-US', {
-        style: 'currency',
-        currency: 'USD',
-        }).format(props.value);
+      new Intl.NumberFormat("en-US", {
+        style: "currency",
+        currency: "USD",
+      }).format(props.value)
     }}</span>
   </div>
 </template>

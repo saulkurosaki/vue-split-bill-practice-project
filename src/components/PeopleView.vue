@@ -1,5 +1,6 @@
 <script setup>
 import { getGrandTotal, store } from "../store/store";
+import Label from "./Label.vue";
 </script>
 
 <template>
@@ -8,9 +9,7 @@ import { getGrandTotal, store } from "../store/store";
   <div class="people-view" v-if="store.people.length > 0">
     <div class="header">
       <div>
-        <div>
-          {{ getGrandTotal() }}
-        </div>
+        <Label title="total + tip: " :value="getGrandTotal()" />
       </div>
 
       <div>
