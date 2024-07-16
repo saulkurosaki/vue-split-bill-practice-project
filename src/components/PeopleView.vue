@@ -56,4 +56,15 @@ import Person from "./Person.vue";
   grid-template-rows: auto;
   gap: 10px;
 }
+
+.header {
+  color: white;
+  font-weight: bolder;
+  padding: 20px 0;
+  font-size: 28px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  flex-direction: column;
+}
 </style>
