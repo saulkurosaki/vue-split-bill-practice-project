@@ -14,9 +14,12 @@ import Label from "./Label.vue";
 
       <div>
         <Label title="Remaining: " :value="store.params.remaining" />
-        <div>
-          {{ store.params.remaining }}
-        </div>
+      </div>
+    </div>
+
+    <div class="people-container">
+      <div v-for="person in store.people" :key="person.id">
+        {{ person.totalPerPerson }}
       </div>
     </div>
   </div>
