@@ -54,4 +54,11 @@ const handleChange = (e) => {
   color: white;
   text-align: center;
 }
+
+.person-to-pay {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bolder;
+  color: yellowgreen;
+}
 </style>
