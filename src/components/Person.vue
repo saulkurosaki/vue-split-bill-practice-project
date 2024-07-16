@@ -40,9 +40,9 @@ const handleChange = (e) => {
   overflow: hidden;
 }
 
-/* .person-paid {
+.person-paid {
   border: solid 3px yellowgreen;
-} */
+}
 
 /* .person-no-paid {
   border: solid 3px #ccc;
