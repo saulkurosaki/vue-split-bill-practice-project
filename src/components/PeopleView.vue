@@ -23,8 +23,8 @@ import Person from "./Person.vue";
         v-for="person in store.people"
         :key="person.id"
         :id="person.id"
-        :numberOfPerson="person.numberOfPerson"
-        :totalPerPerson="person.totalPerPerson"
+        :number-of-person="person.numberOfPerson"
+        :total-per-person="person.totalPerPerson"
         :paid="person.paid"
       />
     </div>

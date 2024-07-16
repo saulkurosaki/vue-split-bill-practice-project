@@ -3,17 +3,17 @@ import { defineProps, ref } from "vue";
 import { pay } from "../store/store.js";
 
 const props = defineProps(["id", "numberOfPerson", "totalPerPerson", "paid"]);
-const paid = ref(false);
+let paid = ref(false);
 
 const handleChange = (e) => {
-  paid = e.target.value;
+  paid = e.target.checked;
 
   pay(props.id, paid);
 };
 </script>
 
 <template>
-  <div :class="['person', person.paid ? 'person-paid' : 'person-no-paid']">
+  <div :class="['person', props.paid ? 'person-paid' : 'person-no-paid']">
     <div class="person-number">Person {{ props.numberOfPerson }}</div>
     <div class="person-to-pay">
       {{
@@ -29,4 +29,22 @@ const handleChange = (e) => {
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.person {
+  height: 200px;
+  border-radius: 5px;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+/* .person-paid {
+  border: solid 3px yellowgreen;
+} */
+
+/* .person-no-paid {
+  border: solid 3px #ccc;
+} */
+</style>
