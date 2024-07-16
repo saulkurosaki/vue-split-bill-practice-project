@@ -31,4 +31,13 @@ import Person from "./Person.vue";
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.no-items {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+}
+</style>
