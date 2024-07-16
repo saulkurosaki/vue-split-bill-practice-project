@@ -13,6 +13,7 @@ import Label from "./Label.vue";
       </div>
 
       <div>
+        <Label title="Remaining: " :value="store.params.remaining" />
         <div>
           {{ store.params.remaining }}
         </div>
