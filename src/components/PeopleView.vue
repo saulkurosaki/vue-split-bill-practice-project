@@ -40,4 +40,11 @@ import Person from "./Person.vue";
   justify-content: center;
   font-size: 28px;
 }
+
+.people-view {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
 </style>
