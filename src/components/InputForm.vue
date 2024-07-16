@@ -51,4 +51,11 @@ form {
   font-size: 18px;
   padding: 20px;
 }
+
+.form-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
 </style>
