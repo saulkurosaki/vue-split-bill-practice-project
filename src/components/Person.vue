@@ -44,7 +44,7 @@ const handleChange = (e) => {
   border: solid 3px yellowgreen;
 }
 
-/* .person-no-paid {
+.person-no-paid {
   border: solid 3px #ccc;
-} */
+}
 </style>
