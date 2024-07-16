@@ -47,4 +47,11 @@ const handleChange = (e) => {
 .person-no-paid {
   border: solid 3px #ccc;
 }
+
+.person-number {
+  background-color: black;
+  padding: 10px;
+  color: white;
+  text-align: center;
+}
 </style>
