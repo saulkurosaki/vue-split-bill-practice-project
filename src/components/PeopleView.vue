@@ -47,4 +47,13 @@ import Person from "./Person.vue";
   align-items: center;
   flex-direction: column;
 }
+
+.people-container {
+  width: 800px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 10px;
+}
 </style>
