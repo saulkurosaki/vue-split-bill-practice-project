@@ -62,4 +62,11 @@ form {
 form label {
   display: block;
 }
+
+form input {
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 18px;
+}
 </style>
