@@ -40,4 +40,15 @@ const handleSubmit = () => {
   </form>
 </template>
 
-<style scoped></style>
+<style scoped>
+form {
+  width: 400px;
+  background-color: rgb(23, 129, 78);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 18px;
+  padding: 20px;
+}
+</style>
