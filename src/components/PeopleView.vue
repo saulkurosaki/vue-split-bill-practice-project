@@ -1,6 +1,7 @@
 <script setup>
 import { getGrandTotal, store } from "../store/store";
 import Label from "./Label.vue";
+import Person from "./Person.vue";
 </script>
 
 <template>
@@ -18,9 +19,14 @@ import Label from "./Label.vue";
     </div>
 
     <div class="people-container">
-      <div v-for="person in store.people" :key="person.id">
-        {{ person.totalPerPerson }}
-      </div>
+      <Person
+        v-for="person in store.people"
+        :key="person.id"
+        :id="person.id"
+        :numberOfPerson="person.numberOfPerson"
+        :totalPerPerson="person.totalPerPerson"
+        :paid="person.paid"
+      />
     </div>
   </div>
 </template>
