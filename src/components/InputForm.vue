@@ -58,4 +58,8 @@ form {
   flex-direction: column;
   gap: 20px;
 }
+
+form label {
+  display: block;
+}
 </style>
