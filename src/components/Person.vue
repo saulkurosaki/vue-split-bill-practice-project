@@ -13,7 +13,7 @@ const handleChange = (e) => {
 </script>
 
 <template>
-  <div>
+  <div :class="['person', person.paid ? 'person-paid' : 'person-no-paid']">
     <div class="person-number">Person {{ props.numberOfPerson }}</div>
     <div class="person-to-pay">
       {{
