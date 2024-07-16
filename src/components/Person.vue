@@ -61,4 +61,9 @@ const handleChange = (e) => {
   font-weight: bolder;
   color: yellowgreen;
 }
+
+.paid {
+  background-color: #343f68;
+  padding: 10px;
+}
 </style>
